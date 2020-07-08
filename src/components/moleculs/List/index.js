@@ -23,7 +23,7 @@ const List = ({profile, name, desc, type, onPress, icon}) => {
         <TouchableOpacity style={styles.container} onPress={onPress}>
             {icon ? <Icon /> : <Image source={profile} style={styles.avatar} /> }
             <View style={styles.content}>
-            <Text style={styles.mnae}>{name}</Text>
+            <Text style={styles.name}>{name}</Text>
             <Text style={styles.desc}>{desc}</Text>
             </View>
             {type === 'next' && <IconNext />}
